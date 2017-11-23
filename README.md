@@ -7,3 +7,11 @@ Este es el reto de desarrollar un proyecto cada día durante 30 días!!!
 Esta es la fuente oficial del reto:
 [javascript30](https://javascript30.com/)
 
+Dia 1 - Javascript Drum Kit
+Dia 2 - JS + CSS Clock
+
+
+
+
+
+
