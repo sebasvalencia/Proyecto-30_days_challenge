@@ -41,7 +41,17 @@ const fifteen = inventors.filter( inventor =>
 console.table(fifteen);
 
 //Array.prototype.map()
+//recorre un arreglo hace algo y retorna un nuevo arreglo de la misma dimensión
 //2. Retorne un arreglo con el nombre y apellido de los inventores
+/*const fullNames = inventors.map(function(inventor){
+    return `${inventor.first} ${inventor.last}`;
+});*/
+const fullNames = inventors.map(inventor =>
+     `${inventor.first} ${inventor.last}`);
+
+console.table(fullNames);
+
+
 
 //Array.prototype.sort()
 //3. Ordene el arreglo de inventores por fecha de nacimiento del menor al mayor
