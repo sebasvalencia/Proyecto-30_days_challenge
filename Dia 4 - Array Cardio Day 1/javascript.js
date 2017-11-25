@@ -90,6 +90,12 @@ console.table(oldest);
 
 //6. Crear una lista de Boulevards en Paris que contenga 'de' en cualquier parte del nombre
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+const category = document.querySelector('.mw-category');
+const links = Array.from(category.querySelectorAll('a'));//cambiarlo a un arreglo
+
+const de = links
+                .map(link => link.textContent)
+                .filter(streetName => streetName.includes('de'));
 
 //7. Ordene el ejercicio
 //Ordene el arreglo de personas alfabeticamente por apellido 
