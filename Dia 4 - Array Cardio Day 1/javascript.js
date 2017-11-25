@@ -21,9 +21,31 @@ const inventors = [
     { first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909 }
 ];
 
+const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry', 'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 'Bellow, Saul', 'Benchley, Robert', 'Benenson, Peter', 'Ben-Gurion, David', 'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana', 'Bent, Silas', 'Bentsen, Lloyd', 'Berger, Ric', 'Bergman, Ingmar', 'Berio, Luciano', 'Berle, Milton', 'Berlin, Irving', 'Berne, Eric', 'Bernhard, Sandra', 'Berra, Yogi', 'Berry, Halle', 'Berry, Wendell', 'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden, Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine', 'Black, Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William'];
 
+//Array.prototype.filter()
+//1. Filtrar la lista de inventores para los nacidos en 1500 a 1600
 
+//Array.prototype.map()
+//2. Retorne un arreglo con el nombre y apellido de los inventores
 
+//Array.prototype.sort()
+//3. Ordene el arreglo de inventores por fecha de nacimiento del menor al mayor
+
+//Array.prototype.reduce()
+//4. Cuantos años vivieron los inventores
+
+//5. Ordene los inventores por años vividos
+
+//6. Crear una lista de Boulevards en Paris que contenga 'de' en cualquier parte del nombre
+// https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+
+//7. Ordene el ejercicio
+//Ordene el arreglo de personas alfabeticamente por apellido 
+
+//8. Reduce exercise
+//Sumar cada una de las instancias de cada elemento
+const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 
 
 
