@@ -118,7 +118,15 @@ console.table(alpha);
 //Sumar cada una de las instancias de cada elemento
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 
+const transportation = data.reduce(function(object, item){
+    //console.log(item);
+    if(!object[item]){
+        object[item] =0;
+    }
+    object[item]++;
+    return object;
+},{});
 
-
+console.log(transportation);
 
 
