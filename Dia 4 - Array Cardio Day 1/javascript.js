@@ -25,6 +25,20 @@ const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick
 
 //Array.prototype.filter()
 //1. Filtrar la lista de inventores para los nacidos en 1500 a 1600
+/*const fifteen = inventors.filter(function(inventor){
+    //console.log(inventor);
+    if(inventor.year >= 1500 && inventor.year<1600){ 
+        return true;//Nos quedamos con el o no
+    }else{
+        return false;
+    }
+});
+console.table(fifteen);*/
+
+const fifteen = inventors.filter( inventor => 
+    (inventor.year >= 1500 && inventor.year<1600)
+);
+console.table(fifteen);
 
 //Array.prototype.map()
 //2. Retorne un arreglo con el nombre y apellido de los inventores
