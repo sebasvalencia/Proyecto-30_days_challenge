@@ -22,7 +22,7 @@ const inventors = [
 ];
 
 const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry', 'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 'Bellow, Saul', 'Benchley, Robert', 'Benenson, Peter', 'Ben-Gurion, David', 'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana', 'Bent, Silas', 'Bentsen, Lloyd', 'Berger, Ric', 'Bergman, Ingmar', 'Berio, Luciano', 'Berle, Milton', 'Berlin, Irving', 'Berne, Eric', 'Bernhard, Sandra', 'Berra, Yogi', 'Berry, Halle', 'Berry, Wendell', 'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden, Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine', 'Black, Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William'];
-
+/*******************************  filter()  *************************************/
 //Array.prototype.filter()
 //1. Filtrar la lista de inventores para los nacidos en 1500 a 1600
 /*const fifteen = inventors.filter(function(inventor){
@@ -40,6 +40,7 @@ const fifteen = inventors.filter( inventor =>
 );
 console.table(fifteen);
 
+/*******************************  map()  *************************************/
 //Array.prototype.map()
 //recorre un arreglo hace algo y retorna un nuevo arreglo de la misma dimensión
 //2. Retorne un arreglo con el nombre y apellido de los inventores
@@ -51,11 +52,25 @@ const fullNames = inventors.map(inventor =>
 
 console.table(fullNames);
 
-
-
+/*******************************  sort()  *************************************/
 //Array.prototype.sort()
 //3. Ordene el arreglo de inventores por fecha de nacimiento del menor al mayor
+//tiene dos elementos y ordena dos arreglos y va recorriendo el arreglo
+/*const ordered = inventors.sort(function(firstPerson, secondPerson){
+    if(firstPerson.year > secondPerson.year){
+        return 1;
+    }else{
+        return -1;
+    }
+    
+});*/
 
+const ordered = inventors.sort((firstPerson, secondPerson) => firstPerson.year > secondPerson.year ? 1 : -1);
+console.table(ordered);
+
+
+
+/*******************************  reduce()  *************************************/
 //Array.prototype.reduce()
 //4. Cuantos años vivieron los inventores
 
