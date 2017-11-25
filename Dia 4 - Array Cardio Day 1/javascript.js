@@ -73,6 +73,11 @@ console.table(ordered);
 /*******************************  reduce()  *************************************/
 //Array.prototype.reduce()
 //4. Cuantos años vivieron los inventores
+//
+const totalYears = inventors.reduce(function(total, inventor){
+    return total + (inventor.passed - inventor.year);
+},0);
+console.log(totalYears);
 
 //5. Ordene los inventores por años vividos
 
