@@ -98,17 +98,27 @@ const de = links
                 .map(link => link.textContent)
                 .filter(streetName => streetName.includes('de'));*/
 
-/*******************************    *************************************/
+/*******************************  sort()  *************************************/
 
 //7. Ordene el ejercicio
 //Ordene el arreglo de personas alfabeticamente por apellido 
+const alpha = people.sort((lastOne, nextOne) => {
+    //console.log(lastOne);
+    const [alast, afirst] = lastOne.split(', ');
+    const [blast, bfirst] = nextOne.split(', ');
+    //console.log(alast, afirst);
+    return alast > blast ? 1 : -1;
+});
 
+console.table(alpha);
 
 /*******************************    *************************************/
 
 //8. Reduce exercise
 //Sumar cada una de las instancias de cada elemento
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+
+
 
 
 
