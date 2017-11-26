@@ -11,6 +11,8 @@ Esta es la fuente oficial del reto:
 * Dia 2 - JS + CSS Clock
 * Dia 3 - Playing with CSS variables and JS
 * Dia 4 - Array Cardio  Day 1
+* Dia 5 - Flex Panels Image Gallery
+
 
 
 
