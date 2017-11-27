@@ -12,7 +12,7 @@ Esta es la fuente oficial del reto:
 * Dia 3 - Playing with CSS variables and JS
 * Dia 4 - Array Cardio  Day 1
 * Dia 5 - Flex Panels Image Gallery
-
+* Dia 6 - Ajax Type Ahead
 
 
 
