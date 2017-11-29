@@ -14,7 +14,7 @@ Esta es la fuente oficial del reto:
 * Dia 5 - Flex Panels Image Gallery
 * Dia 6 - Ajax Type Ahead
 * Dia 7 - Array Cardio Day 2
-
+* Dia 8 - Fun with HMTL5 Canvas
 
 
 
