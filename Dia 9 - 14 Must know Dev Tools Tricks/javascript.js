@@ -26,6 +26,7 @@ function makeGreen() {
     console.log('%c I am some great text ', 'font-size:50px; background:red');//Anteponer %c
 
     // warning!
+    console.warn('OH NOOO');
 
     // Error :|
 
