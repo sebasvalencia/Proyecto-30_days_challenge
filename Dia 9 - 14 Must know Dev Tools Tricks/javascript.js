@@ -48,7 +48,7 @@ function view() {
 const dogs = [
     {
         name: 'Snickers',
-        agge: 2
+        age: 2
     },
     { name: 'hugo', age: 8 }
 ];
@@ -86,3 +86,6 @@ fetch('https://api.github.com/users/wesbos')
         console.timeEnd('fetching data');//mismo valor
         console.log(data);
     });
+
+    //Table
+    console.table(dogs);
