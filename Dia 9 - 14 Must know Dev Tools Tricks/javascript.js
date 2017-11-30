@@ -17,6 +17,9 @@ function makeGreen() {
     console.log('hello');
 
     // Interpolated
+    console.log('Hello I am a %s string!', '💩');//Pasarle un parametro
+    var popo = '💩';
+    console.log(`Hello I am a ${popo} string!`);//Mejor ES6
 
     // Styled
 
