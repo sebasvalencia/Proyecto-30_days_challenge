@@ -32,6 +32,7 @@ function makeGreen() {
     console.error('shit');
 
     // Info
+    console.info('Crocodiles eat 3-4 people per year');
 
     // Testing
 
