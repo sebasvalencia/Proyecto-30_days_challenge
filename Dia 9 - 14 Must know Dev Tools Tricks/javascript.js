@@ -62,20 +62,27 @@ dogs.forEach(dog => {
     console.groupEnd(`${dog.name}`);
 });
 
-console.log({dogs});
+console.log({ dogs });
 
-    // counting
-    console.count('Wes');
-    console.count('Wes');
-    console.count('Steve');
-    console.count('Steve');
-    console.count('Wes');
-    console.count('Steve');
-    console.count('Wes');
-    console.count('Steve');
-    console.count('Steve');
-    console.count('Steve');
-    console.count('Steve');
-    console.count('Steve');
+// counting
+console.count('Wes');
+console.count('Wes');
+console.count('Steve');
+console.count('Steve');
+console.count('Wes');
+console.count('Steve');
+console.count('Wes');
+console.count('Steve');
+console.count('Steve');
+console.count('Steve');
+console.count('Steve');
+console.count('Steve');
 
-    // timing
+// timing cuanto demora una peticion
+console.time('fetching data');//mismo valor
+fetch('https://api.github.com/users/wesbos')
+    .then(data => data.json())
+    .then(data => {
+        console.timeEnd('fetching data');//mismo valor
+        console.log(data);
+    });
