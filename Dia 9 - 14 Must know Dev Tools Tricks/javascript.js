@@ -14,6 +14,7 @@ function makeGreen() {
 }
 
     // Regular
+    console.log('hello');
 
     // Interpolated
 
