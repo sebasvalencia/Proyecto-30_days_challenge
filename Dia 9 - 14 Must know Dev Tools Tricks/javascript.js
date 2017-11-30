@@ -35,6 +35,11 @@ function makeGreen() {
     console.info('Crocodiles eat 3-4 people per year');
 
     // Testing
+    console.assert(1 === 1, 'That is wrong');//Este no imprime la aserción es correcta
+    console.assert(1 === 2, 'That is wrong');//Este imprime por que es erronea la respuesta
+
+    const p = document.querySelector('p');
+    console.assert(p.classList.contains('ouch'), 'That is wrong!');
 
     // clearing
 
