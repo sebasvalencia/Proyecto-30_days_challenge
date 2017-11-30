@@ -38,13 +38,19 @@ function makeGreen() {
     console.assert(1 === 1, 'That is wrong');//Este no imprime la aserción es correcta
     console.assert(1 === 2, 'That is wrong');//Este imprime por que es erronea la respuesta
 
-    const p = document.querySelector('p');
-    console.assert(p.classList.contains('ouch'), 'That is wrong!');
+    /*const p = document.querySelector('p');
+    console.assert(p.classList.contains('ouch'), 'That is wrong!');*/
 
     // clearing
     console.clear();
 
     // Viewing DOM Elements
+    function view(){
+        const p = document.querySelector('p');
+        console.log(p);//Muestra el elemento html
+        console.dir(p);//Muestra todas las propiedades del elemento html
+    }
+    
 
     // Grouping together
 
