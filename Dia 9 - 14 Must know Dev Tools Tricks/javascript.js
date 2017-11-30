@@ -22,6 +22,8 @@ function makeGreen() {
     console.log(`Hello I am a ${popo} string!`);//Mejor ES6
 
     // Styled
+    //Primer parametro texto, segundo parametro estilos
+    console.log('%c I am some great text ', 'font-size:50px; background:red');//Anteponer %c
 
     // warning!
 
