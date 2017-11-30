@@ -29,6 +29,7 @@ function makeGreen() {
     console.warn('OH NOOO');
 
     // Error :|
+    console.error('shit');
 
     // Info
 
