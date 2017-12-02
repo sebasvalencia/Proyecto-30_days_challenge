@@ -9,7 +9,7 @@ const ranges = player.querySelectorAll('.player__slider');
 
 //Build out functions
 //Llamar a play o pause
-function tooglePlay(){
+function tooglePlay() {
     /*
     if(video.paused){
         video.play();
@@ -21,29 +21,36 @@ function tooglePlay(){
     video[method]();
 }
 
-function updateButton(){
+function updateButton() {
     console.log('Update the button');
     const icon = this.paused ? '►' : '❚ ❚';
     //toggle button
     toggle.textContent = icon;
 }
 
-function skip(){
+function skip() {
     console.log('Skipping!');
     console.log(this.dataset.skip);
     video.currentTime += parseFloat(this.dataset.skip);
 }
 
-function handleRangeUpdate(){
+function handleRangeUpdate() {
     console.log(this.value);
     console.log(this.name);
     video[this.name] = this.value;
+}
+
+function handleProgress() {
+    //Actualizar  flex-basics
+    const percent = (video.currentTime / video.duration) * 100;
+    progressBar.style.flexBasis = `${percent}%`;
 }
 
 //Hook up the event listeners
 video.addEventListener('click', tooglePlay);
 video.addEventListener('play', updateButton);
 video.addEventListener('pause', updateButton);
+video.addEventListener('timeupdate', handleProgress);
 
 toggle.addEventListener('click', tooglePlay);
 
