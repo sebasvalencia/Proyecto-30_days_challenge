@@ -16,7 +16,7 @@ Esta es la fuente oficial del reto:
 * Dia 7 - Array Cardio Day 2
 * Dia 8 - Fun with HMTL5 Canvas
 * Dia 9 - 14 Must know Dev Tools Tricks
-
+* Dia 10 - Hold Shift to Check Multiple
 
 
 
