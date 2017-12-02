@@ -23,3 +23,4 @@ function tooglePlay(){
 
 //Hook up the event listeners
 video.addEventListener('click', tooglePlay);
+toggle.addEventListener('click', tooglePlay);
