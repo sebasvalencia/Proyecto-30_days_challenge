@@ -17,6 +17,8 @@ Esta es la fuente oficial del reto:
 * Dia 8 - Fun with HMTL5 Canvas
 * Dia 9 - 14 Must know Dev Tools Tricks
 * Dia 10 - Hold Shift to Check Multiple
+* Dia 11 - Custom HTML5 Video Player
+* Dia 12 - Key sequence detection (KONAMI CODE)
 
 
 
