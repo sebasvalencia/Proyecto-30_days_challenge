@@ -19,6 +19,6 @@ Esta es la fuente oficial del reto:
 * Dia 10 - Hold Shift to Check Multiple
 * Dia 11 - Custom HTML5 Video Player
 * Dia 12 - Key sequence detection (KONAMI CODE)
-
+* Dia 13 - Slide in on Scroll
 
 
