@@ -62,7 +62,10 @@
         const team4 = [...players];
         console.log(team4);//["Wes", "Sarah", "Ryan", "Poppy"]
         team4[3] = 'heeee hawww';
-        console.log(team4);
+        console.log(team4);//["Wes", "Sarah", "Ryan", "heeee hawww"]
+
+        const team5 = Array.from(players);
+        console.log(team5);
 
         // now when we update it, the original one isn't changed
 
