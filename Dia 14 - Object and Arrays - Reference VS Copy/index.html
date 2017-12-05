@@ -32,9 +32,9 @@
         console.log(team);//["Wes", "Sarah", "Ryan", "Poppy"]
 
         // You might think we can just do something like this:
-            //team[3] = 'Lux';
-            //console.log(players);//["Wes", "Sarah", "Ryan", "Lux"]
-            //console.log(team);//["Wes", "Sarah", "Ryan", "Lux"]
+        //team[3] = 'Lux';
+        //console.log(players);//["Wes", "Sarah", "Ryan", "Lux"]
+        //console.log(team);//["Wes", "Sarah", "Ryan", "Lux"]
 
         // however what happens when we update that array?
 
@@ -46,10 +46,10 @@
 
         // So, how do we fix this? We take a copy instead!
         const team2 = players.slice();
-            //console.log(team2);//["Wes", "Sarah", "Ryan", "Poppy"]
-            //team[3] = 'Lux';
-            //console.log(players);//["Wes", "Sarah", "Ryan", "Lux"]
-            //console.log(team2);//["Wes", "Sarah", "Ryan", "Poppy"] se hizo una copia del arreglo
+        //console.log(team2);//["Wes", "Sarah", "Ryan", "Poppy"]
+        //team[3] = 'Lux';
+        //console.log(players);//["Wes", "Sarah", "Ryan", "Lux"]
+        //console.log(team2);//["Wes", "Sarah", "Ryan", "Poppy"] se hizo una copia del arreglo
 
         // one way
 
@@ -72,7 +72,7 @@
         // The same thing goes for objects, let's say we have a person object
 
         // with Objects
-        const person ={
+        const person = {
             name: 'Wes Bos',
             age: 90
         };
@@ -85,17 +85,49 @@
 
         // how do we take a copy instead?
         //Object.assign
-        const cap2 = Object.assign({}, person, {number:99, age:12});
+        const cap2 = Object.assign({}, person, { number: 99, age: 12 });
         console.log(cap2);//{name: "Wes Bos", age: 12, number: 99}
 
         // We will hopefully soon see the object ...spread
-        const cap3 = {...person};
+        const cap3 = { ...person };
         console.log(cap3);//{name: "Wes Bos", age: 90}
 
         // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
+        const wes = {
+            name: 'Wes',
+            age: 100,
+            social: {
+                twitter: '@wesbos',
+                facebook: 'wesbos.developer'
+            }
+        };
+
+        console.clear();
+        console.log(wes);//{name: "Wes", age: 100, social: {…}}
+
+        const dev = Object.assign({},wes);
+        console.log(dev);// copy {name: "Wes", age: 100, social: {…}}
+        dev.name = 'Wesley';
 
 
-        
+        console.log(wes);//{name: "Wes", age: 100, social: {…}}
+        console.log(dev);//{name: "Wesley", age: 100, social: {…}}
+
+        //Solo se copia en un nivel, para que lo copie en todos los niveles usar un clone deep
+        //dev.social.twitter = '@coolman';
+        //console.log(wes);
+        //console.log(dev);
+
+
+        const dev2 = JSON.parse(JSON.stringify(wes));
+        dev2.social.twitter = '@coolman';
+        console.log(dev2);//social:{twitter: "@coolman", facebook: "wesbos.developer"}
+        console.log(wes);//social:{twitter: "@wesbos", facebook: "wesbos.developer"}
+
+
+        //Convertirlo en cadena y luego en JSON
+        //JSON.parse(JSON.stringify(wes));
+
     </script>
 </body>
 
