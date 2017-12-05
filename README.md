@@ -20,5 +20,5 @@ Esta es la fuente oficial del reto:
 * Dia 11 - Custom HTML5 Video Player
 * Dia 12 - Key sequence detection (KONAMI CODE)
 * Dia 13 - Slide in on Scroll
-
+* Dia 14 - Object and Arrays - Reference VS Copy
 
