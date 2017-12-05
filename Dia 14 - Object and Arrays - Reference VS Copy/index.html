@@ -28,8 +28,13 @@
         const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
 
         // and we want to make a copy of it.
+        const team = players;
+        console.log(team);//["Wes", "Sarah", "Ryan", "Poppy"]
 
         // You might think we can just do something like this:
+        //team[3] = 'Lux';
+        //console.log(players);//["Wes", "Sarah", "Ryan", "Lux"]
+        //console.log(team);//["Wes", "Sarah", "Ryan", "Lux"]
 
         // however what happens when we update that array?
 
@@ -40,10 +45,16 @@
         // Why? It's because that is an array reference, not an array copy. They both point to the same array!
 
         // So, how do we fix this? We take a copy instead!
+        const team2 = players.slice();
+        //console.log(team2);//["Wes", "Sarah", "Ryan", "Poppy"]
+        team[3] = 'Lux';
+        //console.log(players);//["Wes", "Sarah", "Ryan", "Lux"]
+        //console.log(team2);//["Wes", "Sarah", "Ryan", "Poppy"] se hizo una copia del arreglo
 
         // one way
 
         // or create a new array and concat the old one in
+
 
         // or use the new ES6 Spread
 
