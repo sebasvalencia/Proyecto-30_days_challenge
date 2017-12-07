@@ -22,3 +22,5 @@ Esta es la fuente oficial del reto:
 * Dia 13 - Slide in on Scroll
 * Dia 14 - Object and Arrays - Reference VS Copy
 * Dia 15 - LocalStorage 
+* Dia 16 - CSS Text Shadow mouse move effect
+
