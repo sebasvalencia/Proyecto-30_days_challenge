@@ -26,3 +26,6 @@ Esta es la fuente oficial del reto:
 * Dia 17 - Sort Without Articles
 * Dia 18 - Adding Up Times with Reduce
 * Dia 19 - Webcam Fun
+* Dia 20 - Speech Detection
+
+
