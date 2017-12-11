@@ -25,3 +25,4 @@ Esta es la fuente oficial del reto:
 * Dia 16 - CSS Text Shadow mouse move effect
 * Dia 17 - Sort Without Articles
 * Dia 18 - Adding Up Times with Reduce
+* Dia 19 - Webcam Fun
