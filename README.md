@@ -27,5 +27,5 @@ Esta es la fuente oficial del reto:
 * Dia 18 - Adding Up Times with Reduce
 * Dia 19 - Webcam Fun
 * Dia 20 - Speech Detection
-
+* Dia 21 - Geolocation based speedometer and compass
 
