@@ -30,10 +30,3 @@ Esta es la fuente oficial del reto:
 * Dia 21 - Geolocation based speedometer and compass
 * Dia 22 - Follow Along Link Highlighter
 
-
-
-
-
-
-
-
