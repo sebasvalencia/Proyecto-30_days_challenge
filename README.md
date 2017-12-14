@@ -29,4 +29,4 @@ Esta es la fuente oficial del reto:
 * Dia 20 - Speech Detection
 * Dia 21 - Geolocation based speedometer and compass
 * Dia 22 - Follow Along Link Highlighter
-
+* Dia 23 - Speech Synthesis
