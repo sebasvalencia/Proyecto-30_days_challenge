@@ -31,5 +31,5 @@ Esta es la fuente oficial del reto:
 * Dia 22 - Follow Along Link Highlighter
 * Dia 23 - Speech Synthesis
 * Dia 24 - Sticky Nav
-
+* Dia 25 - Event capture, propagation, bubbling and once
 
