@@ -17,8 +17,36 @@
         </div>
     </div>
 
+    <button>Click Me!</button>
+
     <script>
-        
+        const divs = document.querySelectorAll('div');
+        const button = document.querySelector('button');
+
+        function logText(e) {
+            console.log(this.classList.value);
+            //e.stopPropagation(); // stop bubbling!
+            console.log(this);
+        }
+
+        document.body.addEventListener('click', logText, {
+            capture: false,
+            once: true, //solo se ejecuta una vez el evento, no vuelve a ejecutarse si se da click
+        });//three two one bod
+
+        divs.forEach(div => div.addEventListener('click', logText));
+
+        //Solo se ejecuta una vez, in store checkout
+        button.addEventListener('click', () => {
+            console.log('Click!!!');
+        },{
+            once: true
+        });
+
+
+
+
+
     </script>
 </body>
 
