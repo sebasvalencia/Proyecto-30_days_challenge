@@ -32,4 +32,5 @@ Esta es la fuente oficial del reto:
 * Dia 23 - Speech Synthesis
 * Dia 24 - Sticky Nav
 * Dia 25 - Event capture, propagation, bubbling and once
+* Dia 26 - Stripe Follow Along Dropdown
 
