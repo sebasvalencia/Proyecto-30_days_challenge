@@ -36,3 +36,4 @@ Esta es la fuente oficial del reto:
 * Dia 27 - Click and drag to scroll
 * Dia 28 - Video speed controller UI
 * Dia 29 - Countdown Clock
+* Dia 30 - Whack a mole game
