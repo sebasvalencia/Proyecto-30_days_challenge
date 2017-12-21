@@ -35,3 +35,4 @@ Esta es la fuente oficial del reto:
 * Dia 26 - Stripe Follow Along Dropdown
 * Dia 27 - Click and drag to scroll
 * Dia 28 - Video speed controller UI
+* Dia 29 - Countdown Clock
